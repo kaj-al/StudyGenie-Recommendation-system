@@ -1,0 +1,7 @@
+streamlit
+langchain
+requests
+python-dotenv
+google-api-python-client
+arxiv
+yt-dlp
