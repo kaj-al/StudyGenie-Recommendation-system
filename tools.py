@@ -50,12 +50,15 @@ def youtube(query):
     videos = []
     for entry in results["entries"]:
         id = entry.get("id")
+        thumbnail = entry.get("thumbnail")
+        if not thumbnail and id:
+            thumbnail = f"https://img.youtube.com/vi/{id}/hqdefault.jpg"
         videos.append({
             "title":entry.get("title"),
             "url":f"https://www.youtube.com/watch?v={id}",
             "duration":entry.get("duration"),
             "channel":entry.get("uploader"),
-            "thumbnail":entry.get("thumbnail"),
+            "thumbnail":thumbnail
         })
     return videos
 
