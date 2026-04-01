@@ -24,6 +24,12 @@ AI - powered Recommendation System helps to discover best learning resources inc
 - Framework - Langchain
 
 ## Installation
+Clone repo:
+```bash
+git clone https://github.com/kaj-al/StudyGenie-Recommendation-system.git
+cd StudyGenie-Recommendation-system
+```
+
 Install dependencies:
 ```bash
 pip install -r requirements.txt
